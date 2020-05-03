@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Helvetica Now Micro";
+  src: local("../fonts/Helvetica Now Micro Regular"), local("Helvetica-Now-Micro-Regular");
+  src: url("../fonts/HelveticaNowMicro-Regular.woff2") format("woff2");
+  src: url("../fonts/HelveticaNowMicro-Regular.woff") format("woff");
+  src: url("../fonts/HelveticaNowMicro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Basic Settings */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Pacifico", cursive;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  height: 100vh;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 60%;
+  text-transform: uppercase;
+}
+.item:hover {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-shadow: 0px 0px 20px 3px black;
+          box-shadow: 0px 0px 20px 3px black;
+  z-index: 1111;
+  opacity: 1;
+}
+.item span {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px black;
+}
+
+.item-1 {
+  background: url(https://klike.net/uploads/posts/2019-11/1574514207_1.jpg) no-repeat center center;
+}
+.item-1:hover span {
+  color: #fc4eed;
+  opacity: 1;
+}
+
+.item-2 {
+  background: url(https://s2.best-wallpaper.net/wallpaper/iphone/1807/Summer-lavender-fields-trees-sunset_iphone_750x1334.jpg) no-repeat center center;
+}
+.item-2:hover span {
+  color: #4e9ffc;
+  opacity: 1;
+}
+
+.item-3 {
+  background: url(https://klike.net/uploads/posts/2019-11/1574514242_3.jpg) no-repeat center center;
+}
+.item-3:hover span {
+  color: #fc4eed;
+  opacity: 1;
+}
+
+.item-4 {
+  background: url(https://img3.akspic.ru/image/97293-list-leto-peyzash-klenovoe_derevo-priroda-1080x1920.jpg) no-repeat center center;
+}
+.item-4:hover span {
+  color: #4e9ffc;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+
+  .item {
+    width: 100vw;
+    height: 25vh;
+  }
+
+  .item-1, .item-2, .item-3, .item-4 {
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
